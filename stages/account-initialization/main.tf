@@ -1,5 +1,5 @@
 module "account_initialization" {
-  source = "git::https://sourcecode.ana.corp.aviva.com/scm/apa/account-initialization.git?ref=main"
+  source = "git::https://aviva-canada.ghe.com/Arctiq/account-initialization.git?ref=main"
 
   account_id  = var.account_id
   environment = var.environment
@@ -7,7 +7,7 @@ module "account_initialization" {
 }
 
 module "logging" {
-  source = "git::https://sourcecode.ana.corp.aviva.com/scm/apa/logging-baseline.git?ref=v1.2.0"
+  source = "git::https://aviva-canada.ghe.com/Arctiq/logging-baseline.git?ref=v1.2.0"
 
   account_id = var.account_id
 }
