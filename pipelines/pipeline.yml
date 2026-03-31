@@ -8,7 +8,7 @@ resources:
     - repository: shared-modules
       type: git
       # TODO: migrate — still pointing to Bitbucket
-      url: https://sourcecode.ana.corp.aviva.com/scm/apa/pipeline-templates.git
+      url: https://aviva-canada.ghe.com/Arctiq/pipeline-templates.git
 
 stages:
   - stage: Plan
