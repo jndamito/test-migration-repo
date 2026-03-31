@@ -1,11 +1,11 @@
 {
   "modules": {
     "account_initialization": {
-      "source": "https://sourcecode.ana.corp.aviva.com/scm/apa/account-initialization.git",
+      "source": "https://aviva-canada.ghe.com/Arctiq/account-initialization.git",
       "ref": "main"
     },
     "iam_permissions": {
-      "source": "https://sourcecode.ana.corp.aviva.com/scm/apa/iam-permissions.git",
+      "source": "https://aviva-canada.ghe.com/Arctiq/iam-permissions.git",
       "ref": "v1.5.0"
     },
     "shared_networking": {
