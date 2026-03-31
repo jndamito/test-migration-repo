@@ -1,5 +1,5 @@
 module "iam_permissions" {
-  source = "git::https://sourcecode.ana.corp.aviva.com/scm/apa/iam-permissions.git?ref=main"
+  source = "git::https://aviva-canada.ghe.com/Arctiq/iam-permissions.git?ref=main"
 
   account_id       = var.account_id
   developer_groups = var.developer_groups
@@ -7,7 +7,7 @@ module "iam_permissions" {
 }
 
 module "permission_boundary" {
-  source = "git::https://sourcecode.ana.corp.aviva.com/scm/apa/permission-boundary.git?ref=v2.0.1"
+  source = "git::https://aviva-canada.ghe.com/Arctiq/permission-boundary.git?ref=v2.0.1"
 
   account_id = var.account_id
 }
