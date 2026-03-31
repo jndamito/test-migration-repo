@@ -1,0 +1,19 @@
+trigger:
+  branches:
+    include:
+      - main
+
+resources:
+  repositories:
+    - repository: shared-modules
+      type: git
+      # TODO: migrate — still pointing to Bitbucket
+      url: https://sourcecode.ana.corp.aviva.com/scm/apa/pipeline-templates.git
+
+stages:
+  - stage: Plan
+    jobs:
+      - job: TerraformPlan
+        steps:
+          - script: terraform init
+          - script: terraform plan
