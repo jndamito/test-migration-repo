@@ -1,5 +1,5 @@
 module "account_initialization" {
-  source = "git::https://aviva-canada@dev.azure.com/aviva-canada/CloudPlatform/_git/account-initialization.git?ref=main"
+  source = "git::https://aviva-canada@dev.azure.com/aviva-canada/CloudPlatform/_git/account-initialization?ref=main"
 
   account_id  = var.account_id
   environment = var.environment
@@ -7,7 +7,7 @@ module "account_initialization" {
 }
 
 module "logging" {
-  source = "git::https://aviva-canada@dev.azure.com/aviva-canada/CloudPlatform/_git/logging-baseline.git?ref=v1.2.0"
+  source = "git::https://aviva-canada@dev.azure.com/aviva-canada/CloudPlatform/_git/logging-baseline?ref=v1.2.0"
 
   account_id = var.account_id
 }
